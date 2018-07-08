@@ -23,5 +23,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  getStyles() {
+    const styles = {
+      'background-color': this.model.backgroundColor,
+      'height': this.model.height,
+      'color': this.model.textColor
+    };
+    return styles;
+  }
 }

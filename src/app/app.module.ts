@@ -1,17 +1,19 @@
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { IbmcommonNgHeaderModule } from 'ibmcommon-ng-header';
+import { HeaderComponent, SectionComponent } from 'ibmcommon-ng-header';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SectionComponent
   ],
   imports: [
-    BrowserModule,
-    IbmcommonNgHeaderModule
+    BrowserModule
   ],
   providers: [],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

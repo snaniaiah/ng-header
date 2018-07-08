@@ -11,7 +11,7 @@
 *****************************************************************************
 */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HeaderProperties } from './definitions';
 import { HeaderComponent } from './header.component';
 
 describe('HeaderComponent', () => {
@@ -28,6 +28,7 @@ describe('HeaderComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
+    component.model = new HeaderProperties('200px', '#1b2733', '#FFFFFF', '', 'Unit test title');
     fixture.detectChanges();
   });
 
