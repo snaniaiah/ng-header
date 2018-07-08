@@ -1,0 +1,24 @@
+{
+    "name": "ibmcommon-ng-header",
+    "version": "0.0.1",
+    "description": "Header component implemented in Angular as per security standards",
+    "publishConfig": {
+        "registry": "https://na.artifactory.swg-devops.com/artifactory/api/npm/sec-common-npm-local/"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "peerDependencies": {
+        "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+        "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    },
+    "keywords": [
+        "angular",
+        "header",
+        "map",
+        "stats"
+    ],
+    "author": "snanjai@us.ibm.com",
+    "license": "ISC"
+}

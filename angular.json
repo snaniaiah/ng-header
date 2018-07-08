@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ibmcommon-ng-header": {
+      "root": "projects/ibmcommon-ng-header",
+      "sourceRoot": "projects/ibmcommon-ng-header/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ibmcommon-ng-header/tsconfig.lib.json",
+            "project": "projects/ibmcommon-ng-header/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ibmcommon-ng-header/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ibmcommon-ng-header/src/test.ts",
+            "tsConfig": "projects/ibmcommon-ng-header/tsconfig.spec.json",
+            "karmaConfig": "projects/ibmcommon-ng-header/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ibmcommon-ng-header/tsconfig.lib.json",
+              "projects/ibmcommon-ng-header/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng6-header-app"

@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ibmcommon-ng-header": [
+        "dist/ibmcommon-ng-header"
+      ],
+      "ibmcommon-ng-header/*": [
+        "dist/ibmcommon-ng-header/*"
+      ]
+    }
   }
 }

@@ -1,0 +1,7 @@
+<div class="background-div">
+    <div [ngStyle]="{'background-color':model.backgroundColor, 'height': model.height,
+        'color':model.textColor}">
+        <div *ngIf="model.title" class="title-div">{{model.title}}</div>
+        <ng-content></ng-content>
+    </div>
+</div>
